@@ -30,7 +30,7 @@
     <server>
       <id>github</id>
       <username>jwattsuk</username>
-      <password>GITHUB PERSONAL ACCESS TOKEN</password>
+      <password>REPLACE_WITH_API_KEY</password>
     </server>
   </servers>
 </settings>

@@ -11,11 +11,11 @@ import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
         MongoAutoConfiguration.class,
         MongoDataAutoConfiguration.class
 })
-public class SampleServiceApplication {
-    private static final Logger LOG = LoggerFactory.getLogger(SampleServiceApplication.class);
+public class LifecycleEventsService {
+    private static final Logger LOG = LoggerFactory.getLogger(LifecycleEventsService.class);
 
     public static void main(String[] args) throws Exception {
-        LOG.info("Starting Sample Service with process id {}", System.getProperty("PID"));
-        SpringApplication.run(SampleServiceApplication.class, args);
+        LOG.info("Starting Lifecycle Events Service with process id {}", System.getProperty("PID"));
+        SpringApplication.run(LifecycleEventsService.class, args);
     }
 }
