@@ -1,14 +1,16 @@
 package com.jwattsuk.sample.DbProcessor;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class DbProcessor {
 
     public void processData() {
         // Simulate database processing logic
-        System.out.println("Processing data in the database...");
+        log.info("Processing data in the database...");
         // Add actual database processing code here
-        System.out.println("Database processing complete.");
+        log.info("Database processing complete.");
     }
 }

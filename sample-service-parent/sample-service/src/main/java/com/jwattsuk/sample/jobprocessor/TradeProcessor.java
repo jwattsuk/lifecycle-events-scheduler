@@ -1,11 +1,12 @@
 package com.jwattsuk.sample.jobprocessor;
 
 import com.jwattsuk.sample.DbProcessor.DbProcessor;
-import com.jwattsuk.sample.beans.LifecycleJob;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public class TradeProcessor {
 
     private final DbProcessor dbProcessor;
@@ -17,8 +18,8 @@ public class TradeProcessor {
 
     public void processTrades() {
         // Simulate trade processing logic
-        System.out.println("Processing trades...");
+        log.info("Processing trades...");
         dbProcessor.processData();
-        System.out.println("Trades processed.");
+        log.info("Trades processed.");
     }
 }

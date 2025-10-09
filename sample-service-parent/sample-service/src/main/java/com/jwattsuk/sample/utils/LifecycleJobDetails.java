@@ -1,5 +1,8 @@
 package com.jwattsuk.sample.utils;
 
+import lombok.Getter;
+
+@Getter
 public enum LifecycleJobDetails {
     JOB1("job1", "*/10 * * * * *"), // every 10 seconds
     JOB2("job2", "*/30 * * * * *"), // every 30 seconds
@@ -13,11 +16,4 @@ public enum LifecycleJobDetails {
         this.jobTiming = jobTiming;
     }
 
-    public String getJobName() {
-        return jobName;
-    }
-
-    public String getJobTiming() {
-        return jobTiming;
-    }
 }

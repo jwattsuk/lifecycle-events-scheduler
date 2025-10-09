@@ -1,11 +1,12 @@
 package com.jwattsuk.sample.jobprocessor;
 
-import com.jwattsuk.sample.beans.LifecycleJob;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 public abstract class AbstractJobExecutor implements JobExecutor {
 
     void sendNotification(String message) {
         // Simulate sending a notification
-        System.out.println("Notification: " + message);
+        log.info("Notification: " + message);
     }
 }
